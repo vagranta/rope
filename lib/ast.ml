@@ -18,3 +18,15 @@ type expr =
   | Modulo of expr * expr
   | Tuple of expr list
   | List of expr list
+
+type constructor =
+  | Ctor of string * typ list
+
+type type_decl =
+  | SumType of string * constructor list
+
+type toplevel =
+  | TopLet of string * typ * expr
+  | TopFun of string * (string * typ) list * typ * expr
+  | TopType of type_decl
+  | TopInclude of string
