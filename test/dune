@@ -1,2 +1,4 @@
 (test
- (name test_rope))
+ (name test_lexer)
+ (modules test_lexer)
+ (libraries rope))
