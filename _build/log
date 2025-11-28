@@ -1,0 +1,6 @@
+# dune init proj rope
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/leob/.cache/dune/db
+# Workspace root: /Users/leob/Desktop/rope
+# Auto-detected concurrency: 8
