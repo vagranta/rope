@@ -38,4 +38,4 @@ rule token = parse
   | "/"              { DIV }
   | "%"              { MOD }
   | eof              { EOF }
-  | _ as c           { raise (LexError ("Unknown character: " ^ Char.escaped c)) }
+  | _ as c           { raise (LexerErr ("Unknown character: " ^ Char.escaped c)) }

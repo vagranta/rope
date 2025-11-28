@@ -894,7 +894,7 @@ let
 # 895 "lexer.ml"
 = Lexing.sub_lexeme_char lexbuf lexbuf.Lexing.lex_start_pos in
 # 41 "lexer.mll"
-                     ( raise (LexError ("Unknown character: " ^ Char.escaped c)) )
+                     ( raise (LexerErr ("Unknown character: " ^ Char.escaped c)) )
 # 899 "lexer.ml"
 
   | __ocaml_lex_state -> lexbuf.Lexing.refill_buff lexbuf;
